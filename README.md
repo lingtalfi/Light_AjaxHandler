@@ -52,6 +52,9 @@ Here is an example of the service configuration:
 ```yaml
 ajax_handler:
     instance: Ling\Light_AjaxHandler\Service\LightAjaxHandlerService
+        methods:
+            setContainer:
+                container: @container()
 
 
 
@@ -64,7 +67,6 @@ $easy_route.methods_collection:
         method: registerBundleFile
         args:
             file: config/data/Light_AjaxHandler/Light_EasyRoute/lah_routes.byml
-
 ```
 
 
@@ -76,6 +78,10 @@ $easy_route.methods_collection:
 History Log
 =============
 
+- 1.1.0 -- 2019-09-19
+
+    - update LightAjaxHandlerService, now transmits the container to container aware handlers
+    
 - 1.0.2 -- 2019-09-19
 
     - fix route forgotten

@@ -3,6 +3,8 @@
 
 namespace Ling\Light_AjaxHandler\Service;
 
+use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
+use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_AjaxHandler\Exception\LightAjaxHandlerException;
 use Ling\Light_AjaxHandler\Handler\LightAjaxHandlerInterface;
 
@@ -22,12 +24,31 @@ class LightAjaxHandlerService
 
 
     /**
+     * This property holds the container for this instance.
+     * @var LightServiceContainerInterface
+     */
+    protected $container;
+
+
+    /**
      * Builds the LightAjaxHandlerService instance.
      */
     public function __construct()
     {
         $this->handlers = [];
+        $this->container = null;
     }
+
+    /**
+     * Sets the container.
+     *
+     * @param LightServiceContainerInterface $container
+     */
+    public function setContainer(LightServiceContainerInterface $container)
+    {
+        $this->container = $container;
+    }
+
 
     /**
      * Registers a handler.
@@ -40,6 +61,9 @@ class LightAjaxHandlerService
     public function registerHandler(string $identifier, LightAjaxHandlerInterface $handler)
     {
         $this->handlers[$identifier] = $handler;
+        if ($handler instanceof LightServiceContainerAwareInterface) {
+            $handler->setContainer($this->container);
+        }
     }
 
 
