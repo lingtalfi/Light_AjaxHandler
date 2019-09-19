@@ -1,2 +1,14 @@
 ajax_handler:
     instance: Ling\Light_AjaxHandler\Service\LightAjaxHandlerService
+
+
+
+# --------------------------------------
+# hooks
+# --------------------------------------
+
+$easy_route.methods_collection:
+    -
+        method: registerBundleFile
+        args:
+            file: config/data/Light_AjaxHandler/Light_EasyRoute/lah_routes.byml

@@ -53,6 +53,18 @@ Here is an example of the service configuration:
 ajax_handler:
     instance: Ling\Light_AjaxHandler\Service\LightAjaxHandlerService
 
+
+
+# --------------------------------------
+# hooks
+# --------------------------------------
+
+$easy_route.methods_collection:
+    -
+        method: registerBundleFile
+        args:
+            file: config/data/Light_AjaxHandler/Light_EasyRoute/lah_routes.byml
+
 ```
 
 
@@ -64,6 +76,10 @@ ajax_handler:
 History Log
 =============
 
+- 1.0.2 -- 2019-09-19
+
+    - fix route forgotten
+    
 - 1.0.1 -- 2019-09-19
 
     - fix doc links

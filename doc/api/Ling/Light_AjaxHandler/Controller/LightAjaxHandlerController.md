@@ -28,7 +28,8 @@ class <span class="pl-k">LightAjaxHandlerController</span> extends [LightControl
     - protected [Ling\Light\Core\Light](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Core/Light.md) [LightController::$light](#property-light) ;
 
 - Methods
-    - public [handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md)(string $handlerId, string $actionId, array $params = []) : [HttpResponseInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Http/HttpResponseInterface.md)
+    - public [handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md)() : [HttpResponseInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Http/HttpResponseInterface.md)
+    - protected [error](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/error.md)(string $message) : void
 
 - Inherited methods
     - public LightController::__construct() : void
@@ -47,6 +48,7 @@ Methods
 ==============
 
 - [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md) &ndash; and returns its output as a HttpResponseInterface.
+- [LightAjaxHandlerController::error](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/error.md) &ndash; Throws an exception with the given error message.
 - LightController::__construct &ndash; Builds the LightController instance.
 - LightController::setLight &ndash; Sets the light instance.
 - LightController::getLight &ndash; Returns the light application.
