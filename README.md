@@ -64,6 +64,10 @@ ajax_handler:
 History Log
 =============
 
+- 1.0.1 -- 2019-09-19
+
+    - fix doc links
+    
 - 1.0.0 -- 2019-09-19
 
     - initial commit

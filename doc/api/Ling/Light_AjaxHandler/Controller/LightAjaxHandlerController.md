@@ -22,18 +22,18 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LightAjaxHandlerController</span> extends LightController implements LightAwareInterface, LightControllerInterface {
+class <span class="pl-k">LightAjaxHandlerController</span> extends [LightController](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Controller/LightController.md) implements [LightAwareInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Core/LightAwareInterface.md), [LightControllerInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Controller/LightControllerInterface.md) {
 
 - Inherited properties
-    - protected Ling\Light\Core\Light [LightController::$light](#property-light) ;
+    - protected [Ling\Light\Core\Light](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Core/Light.md) [LightController::$light](#property-light) ;
 
 - Methods
-    - public [handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md)(string $handlerId, string $actionId, array $params = []) : Ling\Light\Http\HttpResponseInterface
+    - public [handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md)(string $handlerId, string $actionId, array $params = []) : [HttpResponseInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Http/HttpResponseInterface.md)
 
 - Inherited methods
     - public LightController::__construct() : void
-    - public LightController::setLight(Ling\Light\Core\Light $light) : void
-    - protected LightController::getLight() : Ling\Light\Core\Light
+    - public LightController::setLight([Ling\Light\Core\Light](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Core/Light.md) $light) : void
+    - protected LightController::getLight() : [Light](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Core/Light.md)
     - protected LightController::getContainer() : Ling\Light\ServiceContainer\LightServiceContainerInterface
 
 }

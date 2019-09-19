@@ -25,6 +25,9 @@ class LightAjaxHandlerController extends LightController
      *
      *
      *
+     * @param string $handlerId
+     * @param string $actionId
+     * @param array $params
      * @return HttpResponseInterface
      */
     public function handle(string $handlerId, string $actionId, array $params = []): HttpResponseInterface

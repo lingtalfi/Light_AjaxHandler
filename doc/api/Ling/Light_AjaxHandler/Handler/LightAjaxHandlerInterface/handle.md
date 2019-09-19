@@ -7,7 +7,7 @@ LightAjaxHandlerInterface::handle
 
 
 
-LightAjaxHandlerInterface::handle — and returns a json array as specified in the ajax communication protocol.
+LightAjaxHandlerInterface::handle — and returns a json array as specified in the [ajax communication protocol](https://github.com/lingtalfi/AjaxCommunicationProtocol).
 
 
 
@@ -22,7 +22,7 @@ abstract public [LightAjaxHandlerInterface::handle](https://github.com/lingtalfi
 
 
 Handles the action identified by actionId and params,
-and returns a json array as specified in the ajax communication protocol.
+and returns a json array as specified in the [ajax communication protocol](https://github.com/lingtalfi/AjaxCommunicationProtocol).
 
 
 
