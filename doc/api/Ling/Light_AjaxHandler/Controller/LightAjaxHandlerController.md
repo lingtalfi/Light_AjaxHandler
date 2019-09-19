@@ -1,0 +1,68 @@
+[Back to the Ling/Light_AjaxHandler api](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler.md)
+
+
+
+The LightAjaxHandlerController class
+================
+2019-09-19 --> 2019-09-19
+
+
+
+
+
+
+Introduction
+============
+
+The LightAjaxHandlerController class.
+
+
+
+Class synopsis
+==============
+
+
+class <span class="pl-k">LightAjaxHandlerController</span> extends LightController implements LightAwareInterface, LightControllerInterface {
+
+- Inherited properties
+    - protected Ling\Light\Core\Light [LightController::$light](#property-light) ;
+
+- Methods
+    - public [handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md)(string $handlerId, string $actionId, array $params = []) : Ling\Light\Http\HttpResponseInterface
+
+- Inherited methods
+    - public LightController::__construct() : void
+    - public LightController::setLight(Ling\Light\Core\Light $light) : void
+    - protected LightController::getLight() : Ling\Light\Core\Light
+    - protected LightController::getContainer() : Ling\Light\ServiceContainer\LightServiceContainerInterface
+
+}
+
+
+
+
+
+
+Methods
+==============
+
+- [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md) &ndash; and returns its output as a HttpResponseInterface.
+- LightController::__construct &ndash; Builds the LightController instance.
+- LightController::setLight &ndash; Sets the light instance.
+- LightController::getLight &ndash; Returns the light application.
+- LightController::getContainer &ndash; Returns the service container.
+
+
+
+
+
+Location
+=============
+Ling\Light_AjaxHandler\Controller\LightAjaxHandlerController<br>
+See the source code of [Ling\Light_AjaxHandler\Controller\LightAjaxHandlerController](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Controller/LightAjaxHandlerController.php)
+
+
+
+SeeAlso
+==============
+Next class: [LightAjaxHandlerException](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Exception/LightAjaxHandlerException.md)<br>
