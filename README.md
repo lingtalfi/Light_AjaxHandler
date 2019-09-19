@@ -78,6 +78,10 @@ $easy_route.methods_collection:
 History Log
 =============
 
+- 1.2.0 -- 2019-09-19
+
+    - add ContainerAwareLightAjaxHandler
+    
 - 1.1.2 -- 2019-09-19
 
     - fix doc link
