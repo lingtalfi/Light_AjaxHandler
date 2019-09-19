@@ -52,9 +52,9 @@ Here is an example of the service configuration:
 ```yaml
 ajax_handler:
     instance: Ling\Light_AjaxHandler\Service\LightAjaxHandlerService
-        methods:
-            setContainer:
-                container: @container()
+    methods:
+        setContainer:
+            container: @container()
 
 
 
@@ -77,6 +77,10 @@ $easy_route.methods_collection:
 
 History Log
 =============
+
+- 1.1.1 -- 2019-09-19
+
+    - fix typo in README.md and service file
 
 - 1.1.0 -- 2019-09-19
 
