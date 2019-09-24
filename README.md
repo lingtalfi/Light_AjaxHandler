@@ -78,6 +78,10 @@ $easy_route.methods_collection:
 History Log
 =============
 
+- 1.3.0 -- 2019-09-24
+
+    - update LightAjaxHandlerController to adapt new AjaxCommunication protocol
+    
 - 1.2.0 -- 2019-09-19
 
     - add ContainerAwareLightAjaxHandler
