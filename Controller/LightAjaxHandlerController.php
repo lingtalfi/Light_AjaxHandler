@@ -6,6 +6,7 @@ namespace Ling\Light_AjaxHandler\Controller;
 
 use Ling\Light\Controller\LightController;
 use Ling\Light\Http\HttpJsonResponse;
+use Ling\Light\Http\HttpResponse;
 use Ling\Light\Http\HttpResponseInterface;
 use Ling\Light_AjaxHandler\Exception\LightAjaxHandlerException;
 use Ling\Light_AjaxHandler\Service\LightAjaxHandlerService;
@@ -65,6 +66,17 @@ class LightAjaxHandlerController extends LightController
                 "error" => $e->getMessage(),
             ];
         }
+
+
+        if (
+            array_key_exists("type", $response) &&
+            'print' === $response['type'] &&
+            array_key_exists("content", $response)
+        ) {
+            $r = new HttpResponse($response['content']);
+            return $r;
+        }
+
         return HttpJsonResponse::create($response);
 
     }
