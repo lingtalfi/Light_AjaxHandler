@@ -78,6 +78,10 @@ $easy_route.methods_collection:
 History Log
 =============
 
+- 1.5.0 -- 2019-09-26
+
+    - add MicroPermissionContainerAwareLightAjaxHandler
+    
 - 1.4.0 -- 2019-09-24
 
     - update conception, now accepts response of type print

@@ -4,7 +4,7 @@
 
 The LightAjaxHandlerService class
 ================
-2019-09-19 --> 2019-09-24
+2019-09-19 --> 2019-09-26
 
 
 
@@ -78,4 +78,4 @@ See the source code of [Ling\Light_AjaxHandler\Service\LightAjaxHandlerService](
 
 SeeAlso
 ==============
-Previous class: [LightAjaxHandlerInterface](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/LightAjaxHandlerInterface.md)<br>
+Previous class: [MicroPermissionContainerAwareLightAjaxHandler](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/MicroPermissionContainerAwareLightAjaxHandler.md)<br>
