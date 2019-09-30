@@ -78,6 +78,10 @@ $easy_route.methods_collection:
 History Log
 =============
 
+- 1.6.0 -- 2019-09-30
+
+    - removed MicroPermissionContainerAwareLightAjaxHandler
+    
 - 1.5.0 -- 2019-09-26
 
     - add MicroPermissionContainerAwareLightAjaxHandler
