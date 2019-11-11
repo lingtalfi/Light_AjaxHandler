@@ -41,6 +41,11 @@ Return values
 Returns [HttpResponseInterface](https://github.com/lingtalfi/Light/blob/master/doc/api/Ling/Light/Http/HttpResponseInterface.md).
 
 
+Exceptions thrown
+================
+
+- [Exception](http://php.net/manual/en/class.exception.php).&nbsp;
+
 
 
 
@@ -49,7 +54,7 @@ Returns [HttpResponseInterface](https://github.com/lingtalfi/Light/blob/master/d
 
 Source Code
 ===========
-See the source code for method [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Controller/LightAjaxHandlerController.php#L31-L82)
+See the source code for method [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Controller/LightAjaxHandlerController.php#L35-L102)
 
 
 See Also

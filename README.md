@@ -31,6 +31,7 @@ Summary
 - [Light_AjaxHandler api](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler.md) (generated with [DocTools](https://github.com/lingtalfi/DocTools))
 - Pages
     - [Conception notes](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/conception-notes.md)
+    - [Events](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/events.md)
 - [Services](#services)
 
 
@@ -77,7 +78,11 @@ $easy_route.methods_collection:
 
 History Log
 =============
+    
+- 1.7.0 -- 2019-11-11
 
+    - add Light_AjaxHandler.on_controller_exception_caught event
+    
 - 1.6.0 -- 2019-09-30
 
     - removed MicroPermissionContainerAwareLightAjaxHandler
