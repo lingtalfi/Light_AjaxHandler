@@ -72,12 +72,63 @@ $easy_route.methods_collection:
 
 
 
+Quickstart
+=========
+
+Register your handler (using our service) in your plugin's service configuration,
+then you can use our controller, which requires two parameters:
+
+- ajax_handler_id: your plugin name 
+- ajax_action_id: the action identifier (handled by your plugin's handler)
+
+You can add more parameters if you want, they will be passed to your plugin's handler (second argument
+of the handle method).
+ 
+
+Example in jquery:
+
+```js
+
+
+<?php  
+/**
+* @var $service LightAjaxHandlerService
+*/
+$service = $container->get("ajax_handler");
+?>
+
+var baseUrl = <?php $service->getServiceUrl() ?>;
+
+$.post(baseUrl, {
+            ajax_handler_id: MyPlugin,
+            ajax_action_id: my_action_id,
+            param1: "xxx",
+            param2: "yyy",
+
+        }, function (response) {
+              var type = response.type;
+                    if ('error' === type) {
+                        //
+                    } else if ('success' === type) {
+                        //
+                    } else {
+                        //
+                    }
+        }, "json");
+
+```
+
+
 
 
 
 
 History Log
 =============
+    
+- 1.8.0 -- 2019-11-15
+
+    - add LightAjaxHandlerService->getRouteName and getUrl methods
     
 - 1.7.0 -- 2019-11-11
 

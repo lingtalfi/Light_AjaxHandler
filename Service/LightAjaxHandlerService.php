@@ -3,6 +3,7 @@
 
 namespace Ling\Light_AjaxHandler\Service;
 
+use Ling\Light\ReverseRouter\LightReverseRouterInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_AjaxHandler\Exception\LightAjaxHandlerException;
@@ -80,6 +81,40 @@ class LightAjaxHandlerService
             return $this->handlers[$identifier];
         }
         throw new LightAjaxHandlerException("Handler not found with identifier $identifier.");
+    }
+
+
+    /**
+     * Returns the base url for the ajax handler service controller.
+     *
+     * @return string
+     * @throws \Exception
+     */
+    public function getServiceUrl(): string
+    {
+        /**
+         * @var $rr LightReverseRouterInterface
+         */
+        $rr = $this->container->get("reverse_router");
+        return $rr->getUrl($this->getRouteName());
+    }
+
+
+    /**
+     * Returns the name of the route used by this service.
+     *
+     * @return string
+     */
+    public function getRouteName(): string
+    {
+        /**
+         * ...or at least it's the intent.
+         * Since as for now, the value is hardcoded in the configuration
+         * ($app/config/data/Light_AjaxHandler/Light_EasyRoute/lah_routes.byml by default).
+         * So for now the synchronization has to be done manually.
+         *
+         */
+        return "lah_route-ajax_handler";
     }
 
 
