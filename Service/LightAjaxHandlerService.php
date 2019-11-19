@@ -3,11 +3,12 @@
 
 namespace Ling\Light_AjaxHandler\Service;
 
-use Ling\Light\ReverseRouter\LightReverseRouterInterface;
+
 use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_AjaxHandler\Exception\LightAjaxHandlerException;
 use Ling\Light_AjaxHandler\Handler\LightAjaxHandlerInterface;
+use Ling\Light_ReverseRouter\Service\LightReverseRouterService;
 
 /**
  * The LightAjaxHandlerService class.
@@ -93,7 +94,7 @@ class LightAjaxHandlerService
     public function getServiceUrl(): string
     {
         /**
-         * @var $rr LightReverseRouterInterface
+         * @var $rr LightReverseRouterService
          */
         $rr = $this->container->get("reverse_router");
         return $rr->getUrl($this->getRouteName());

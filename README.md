@@ -126,6 +126,10 @@ $.post(baseUrl, {
 History Log
 =============
     
+- 1.9.0 -- 2019-11-19
+
+    - update plugin to accommodate renamed Light_ReverseRouter service 
+    
 - 1.8.0 -- 2019-11-15
 
     - add LightAjaxHandlerService->getRouteName and getUrl methods

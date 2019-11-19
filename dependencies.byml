@@ -3,6 +3,7 @@ dependencies:
         - Bat
         - Light
         - Light_Events
+        - Light_ReverseRouter
     
 
 post_install: 
