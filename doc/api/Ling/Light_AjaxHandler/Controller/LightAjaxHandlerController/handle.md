@@ -21,7 +21,7 @@ public [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_A
 
 
 
-Calls the handler identified by the given handlerId, with the given actionId and params,
+Calls the handler identified by the given ajax_handler_id, with and the given ajax_action_id params,
 and returns its output as a HttpResponseInterface.
 
 We use the [ajax communication protocol](https://github.com/lingtalfi/AjaxCommunicationProtocol), meaning the response is of type json.

@@ -126,6 +126,10 @@ $.post(baseUrl, {
 History Log
 =============
     
+- 1.10.0 -- 2019-11-28
+
+    - add BaseLightAjaxHandler class 
+    
 - 1.9.0 -- 2019-11-19
 
     - update plugin to accommodate renamed Light_ReverseRouter service 
