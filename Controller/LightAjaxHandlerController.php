@@ -4,13 +4,12 @@
 namespace Ling\Light_AjaxHandler\Controller;
 
 
-use Ling\Bat\ClassTool;
 use Ling\Light\Controller\LightController;
 use Ling\Light\Events\LightEvent;
 use Ling\Light\Http\HttpJsonResponse;
+use Ling\Light\Http\HttpRequestInterface;
 use Ling\Light\Http\HttpResponse;
 use Ling\Light\Http\HttpResponseInterface;
-use Ling\Light_AjaxHandler\Exception\LightAjaxHandlerException;
 use Ling\Light_AjaxHandler\Service\LightAjaxHandlerService;
 use Ling\Light_Events\Service\LightEventsService;
 
@@ -21,55 +20,41 @@ use Ling\Light_Events\Service\LightEventsService;
 class LightAjaxHandlerController extends LightController
 {
 
-
     /**
-     * Calls the handler identified by the given ajax_handler_id, with and the given ajax_action_id params,
-     * and returns its output as a HttpResponseInterface.
+     * Handles the request and returns an @page(alcp response).
      *
-     * We use the @page(ajax communication protocol), meaning the response is of type json.
-     *
-     *
+     * @param HttpRequestInterface $request
      * @return HttpResponseInterface
      * @throws \Exception
      */
-    public function handle(): HttpResponseInterface
+    public function handle(HttpRequestInterface $request)
     {
-
         try {
+
+            /**
+             * @var $ajaxService LightAjaxHandlerService
+             */
+            $ajaxService = $this->getContainer()->get('ajax_handler');
+            $alcpResponse = $ajaxService->handle($request);
 
 
             if (
-                array_key_exists("ajax_handler_id", $_POST) &&
-                array_key_exists("ajax_action_id", $_POST)
+                array_key_exists("type", $alcpResponse) &&
+                'print' === $alcpResponse['type'] &&
+                array_key_exists("content", $alcpResponse)
             ) {
-                $params = $_POST;
-            } elseif (array_key_exists("ajax_handler_id", $_GET) &&
-                array_key_exists("ajax_action_id", $_GET)) {
-                $params = $_GET;
+                // special case of the alcp response
+                $response = new HttpResponse($alcpResponse['content']);
             } else {
-                $this->error("Missing key: ajax_handler_id and/or ajax_action_id.");
+                // regular alcp success response
+                $response = new HttpJsonResponse($alcpResponse);
             }
-
-
-            $handlerId = $params['ajax_handler_id'];
-            $actionId = $params['ajax_action_id'];
-            unset($params['ajax_handler_id']);
-            unset($params['ajax_action_id']);
-
-
-            /**
-             * @var $service LightAjaxHandlerService
-             */
-            $service = $this->getContainer()->get("ajax_handler");
-            $handler = $service->getHandler($handlerId);
-            $response = $handler->handle($actionId, $params);
-
         } catch (\Exception $e) {
-            $response = [
+            // regular alcp error response
+            $response = new HttpJsonResponse([
                 "type" => "error",
                 "error" => $e->getMessage(),
-                "exception" => ClassTool::getShortName($e),
-            ];
+            ]);
 
 
             // dispatch the exception (to allow deeper investigation)
@@ -79,38 +64,10 @@ class LightAjaxHandlerController extends LightController
             $events = $this->getContainer()->get("events");
             $data = LightEvent::createByContainer($this->getContainer());
             $data->setVar('exception', $e);
-            $events->dispatch("Light_AjaxHandler.on_controller_exception_caught", $data);
+            $events->dispatch("Light_AjaxHandler.on_handle_exception_caught", $data);
 
         }
-
-
-        //--------------------------------------------
-        // PRINT AS IS FEATURE
-        //--------------------------------------------
-        if (
-            array_key_exists("type", $response) &&
-            'print' === $response['type'] &&
-            array_key_exists("content", $response)
-        ) {
-            $r = new HttpResponse($response['content']);
-            return $r;
-        }
-
-
-        return HttpJsonResponse::create($response);
-
+        return $response;
     }
 
-    //--------------------------------------------
-    //
-    //--------------------------------------------
-    /**
-     * Throws an exception with the given error message.
-     * @param string $message
-     * @throws \Exception
-     */
-    protected function error(string $message)
-    {
-        throw new LightAjaxHandlerException($message);
-    }
 }
