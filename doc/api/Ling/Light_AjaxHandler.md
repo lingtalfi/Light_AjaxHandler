@@ -12,10 +12,6 @@ Table of contents
     - [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md) &ndash; Handles the request and returns an [alcp response](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/ajax-light-communication-protocol.md).
     - LightController::__construct &ndash; Builds the LightController instance.
     - LightController::setLight &ndash; Sets the light instance.
-- [LightAjaxHandlerControllerOld](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerControllerOld.md) &ndash; The LightAjaxHandlerController class.
-    - [LightAjaxHandlerControllerOld::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerControllerOld/handle.md) &ndash; and returns its output as a HttpResponseInterface.
-    - LightController::__construct &ndash; Builds the LightController instance.
-    - LightController::setLight &ndash; Sets the light instance.
 - [LightAjaxHandlerException](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Exception/LightAjaxHandlerException.md) &ndash; The LightAjaxHandlerException class.
 - [BaseLightAjaxHandler](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler.md) &ndash; The BaseLightAjaxHandler class.
     - [BaseLightAjaxHandler::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler/handle.md) &ndash; Handles the given action and returns an [alcp response](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/ajax-light-communication-protocol.md), or throws an exception in case of problems.
@@ -41,8 +37,8 @@ Dependencies
 ============
 - [Light](https://github.com/lingtalfi/Light)
 - [Light_Events](https://github.com/lingtalfi/Light_Events)
-- [Bat](https://github.com/lingtalfi/Bat)
 - [Light_CsrfSession](https://github.com/lingtalfi/Light_CsrfSession)
+- [Bat](https://github.com/lingtalfi/Bat)
 - [Light_ReverseRouter](https://github.com/lingtalfi/Light_ReverseRouter)
 
 

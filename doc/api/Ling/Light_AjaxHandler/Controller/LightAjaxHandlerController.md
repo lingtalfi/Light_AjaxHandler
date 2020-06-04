@@ -69,4 +69,4 @@ See the source code of [Ling\Light_AjaxHandler\Controller\LightAjaxHandlerContro
 
 SeeAlso
 ==============
-Next class: [LightAjaxHandlerControllerOld](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerControllerOld.md)<br>
+Next class: [LightAjaxHandlerException](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Exception/LightAjaxHandlerException.md)<br>

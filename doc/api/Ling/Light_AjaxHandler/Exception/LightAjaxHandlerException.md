@@ -54,4 +54,4 @@ See the source code of [Ling\Light_AjaxHandler\Exception\LightAjaxHandlerExcepti
 
 SeeAlso
 ==============
-Previous class: [LightAjaxHandlerControllerOld](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerControllerOld.md)<br>Next class: [BaseLightAjaxHandler](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler.md)<br>
+Previous class: [LightAjaxHandlerController](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController.md)<br>Next class: [BaseLightAjaxHandler](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler.md)<br>

@@ -32,6 +32,7 @@ Summary
 - Pages
     - [Conception notes](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/conception-notes.md)
     - [Events](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/events.md)
+    - [ajax light communication protocol](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/ajax-light-communication-protocol.md)
 - [Services](#services)
 
 
@@ -78,6 +79,10 @@ $easy_route.methods_collection:
 
 History Log
 =============
+    
+- 2.0.1 -- 2020-06-04
+
+    - update README.md add link to ajax light communication protocol
     
 - 2.0.0 -- 2020-06-04
 
