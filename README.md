@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2020-06-04
+2019-09-19 -> 2020-07-06
 
 
 
@@ -79,6 +79,10 @@ $easy_route.methods_collection:
 
 History Log
 =============
+    
+- 2.1.0 -- 2020-07-06
+
+    - fix LightAjaxHandlerService->handle not allowing main params passed via GET
     
 - 2.0.1 -- 2020-06-04
 
