@@ -58,7 +58,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [BaseLightAjaxHandler::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Handler/BaseLightAjaxHandler.php#L35-L54)
+See the source code for method [BaseLightAjaxHandler::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Handler/BaseLightAjaxHandler.php#L33-L55)
 
 
 See Also

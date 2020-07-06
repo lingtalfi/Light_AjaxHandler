@@ -80,6 +80,10 @@ $easy_route.methods_collection:
 History Log
 =============
     
+- 2.1.1 -- 2020-07-06
+
+    - fix BaseLightAjaxHandler->handle not allowing csrf_token param to be passed via GET
+    
 - 2.1.0 -- 2020-07-06
 
     - fix LightAjaxHandlerService->handle not allowing main params passed via GET
