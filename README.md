@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.1.8 -- 2021-03-09
+  
+    - update planet to adapt Ling.Light:0.70.0, the config/data part (2nd try)
+  
 - 2.1.7 -- 2021-03-09
 
     - update planet to adapt Ling.Light:0.70.0, the config/data part
