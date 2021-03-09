@@ -116,7 +116,7 @@ class LightAjaxHandlerService
         /**
          * ...or at least it's the intent.
          * Since as for now, the value is hardcoded in the configuration
-         * ($app/config/data/Light_AjaxHandler/Light_EasyRoute/lah_routes.byml by default).
+         * ($app/config/data/Ling.Light_AjaxHandler/Light_EasyRoute/lah_routes.byml by default).
          * So for now the synchronization has to be done manually.
          *
          */
