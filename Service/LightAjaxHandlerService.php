@@ -165,7 +165,7 @@ class LightAjaxHandlerService
                 $events = $this->container->get("events");
                 $data = LightEvent::createByContainer($this->container);
                 $data->setVar('exception', $e);
-                $events->dispatch("Light_AjaxHandler.on_handle_exception_caught", $data);
+                $events->dispatch("Ling.Light_AjaxHandler.on_handle_exception_caught", $data);
             } catch (\Exception $e) {
                 $response = [
                     "type" => "error",

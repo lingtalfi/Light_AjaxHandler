@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-03-09
+2019-09-19 -> 2021-03-15
 
 
 
@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.1.9 -- 2021-03-15
+  
+    - update planet to adapt Ling.Light:0.70.0
+  
 - 2.1.8 -- 2021-03-09
   
     - update planet to adapt Ling.Light:0.70.0, the config/data part (2nd try)
@@ -132,7 +136,7 @@ History Log
     
 - 1.7.0 -- 2019-11-11
 
-    - add Light_AjaxHandler.on_handle_exception_caught event
+    - add Ling.Light_AjaxHandler.on_handle_exception_caught event
     
 - 1.6.0 -- 2019-09-30
 

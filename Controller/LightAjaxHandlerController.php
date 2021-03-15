@@ -64,7 +64,7 @@ class LightAjaxHandlerController extends LightController
             $events = $this->getContainer()->get("events");
             $data = LightEvent::createByContainer($this->getContainer());
             $data->setVar('exception', $e);
-            $events->dispatch("Light_AjaxHandler.on_handle_exception_caught", $data);
+            $events->dispatch("Ling.Light_AjaxHandler.on_handle_exception_caught", $data);
 
         }
         return $response;
