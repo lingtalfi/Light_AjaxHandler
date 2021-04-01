@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-03-15
+2019-09-19 -> 2021-04-01
 
 
 
@@ -74,6 +74,11 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.0 -- 2021-04-01
+  
+    - update service, renamed handle to handleViaRegisteredHandlers
+    - add service->handleViaCallable method to share our logic with 3rd party plugins  
+  
 - 2.1.9 -- 2021-03-15
   
     - update planet to adapt Ling.Light:0.70.0
