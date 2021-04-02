@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-04-01
+2019-09-19 -> 2021-04-02
 
 
 
@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.1 -- 2021-04-02
+  
+    - fix service->handleViaCallable using incorrect reference to container
+  
 - 2.2.0 -- 2021-04-01
   
     - update service, renamed handle to handleViaRegisteredHandlers
