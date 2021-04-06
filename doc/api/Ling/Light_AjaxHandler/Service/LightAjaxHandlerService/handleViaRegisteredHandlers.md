@@ -49,7 +49,7 @@ Returns array.
 
 Source Code
 ===========
-See the source code for method [LightAjaxHandlerService::handleViaRegisteredHandlers](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L136-L152)
+See the source code for method [LightAjaxHandlerService::handleViaRegisteredHandlers](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L137-L153)
 
 
 See Also

@@ -1,6 +1,6 @@
 Ling/Light_AjaxHandler
 ================
-2019-09-19 --> 2021-04-02
+2019-09-19 --> 2021-04-06
 
 
 
@@ -12,6 +12,7 @@ Table of contents
     - [LightAjaxHandlerController::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Controller/LightAjaxHandlerController/handle.md) &ndash; Handles the request and returns an [alcp response](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/ajax-light-communication-protocol.md).
     - LightController::__construct &ndash; Builds the LightController instance.
     - LightController::setLight &ndash; Sets the light instance.
+- [ClientErrorException](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Exception/ClientErrorException.md) &ndash; The ClientErrorException class.
 - [LightAjaxHandlerException](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Exception/LightAjaxHandlerException.md) &ndash; The LightAjaxHandlerException class.
 - [BaseLightAjaxHandler](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler.md) &ndash; The BaseLightAjaxHandler class.
     - [BaseLightAjaxHandler::handle](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/api/Ling/Light_AjaxHandler/Handler/BaseLightAjaxHandler/handle.md) &ndash; Handles the given action and returns an [alcp response](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/ajax-light-communication-protocol.md), or throws an exception in case of problems.

@@ -31,6 +31,7 @@ will be dispatched as an event to allow further investigation).
 - if you want to, you can return the alcp response array manually by setting the first argument (which is passed as reference)
          of the callable. You generally don't want to do that, unless you need to return a particular form of the alcp response,
          such as the "print" type for instance.
+- to make the callable return an alcp error response, you can throw a ClientErrorException exception from the callable.
 
 
 See the [alcp response](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/doc/pages/alcp-response.md) document for more information.
@@ -66,7 +67,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightAjaxHandlerService::handleViaCallable](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L176-L223)
+See the source code for method [LightAjaxHandlerService::handleViaCallable](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L178-L237)
 
 
 See Also

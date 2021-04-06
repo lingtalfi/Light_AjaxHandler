@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-04-02
+2019-09-19 -> 2021-04-06
 
 
 
@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.2 -- 2021-04-06
+  
+    - update service->handleViaCallable, the callable can now throw a ClientErrorException exception
+  
 - 2.2.1 -- 2021-04-02
   
     - fix service->handleViaCallable using incorrect reference to container

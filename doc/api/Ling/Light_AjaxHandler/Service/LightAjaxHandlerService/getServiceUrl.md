@@ -51,7 +51,7 @@ Exceptions thrown
 
 Source Code
 ===========
-See the source code for method [LightAjaxHandlerService::getServiceUrl](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L102-L109)
+See the source code for method [LightAjaxHandlerService::getServiceUrl](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L103-L110)
 
 
 See Also

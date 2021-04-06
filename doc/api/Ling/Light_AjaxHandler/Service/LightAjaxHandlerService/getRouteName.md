@@ -46,7 +46,7 @@ Returns string.
 
 Source Code
 ===========
-See the source code for method [LightAjaxHandlerService::getRouteName](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L117-L127)
+See the source code for method [LightAjaxHandlerService::getRouteName](https://github.com/lingtalfi/Light_AjaxHandler/blob/master/Service/LightAjaxHandlerService.php#L118-L128)
 
 
 See Also
