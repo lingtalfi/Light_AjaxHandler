@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.3 -- 2021-05-03
+
+    - Update dependencies to Ling.Light_Events (pushed by SubscribersUtil)
+
 - 2.2.2 -- 2021-04-06
   
     - update service->handleViaCallable, the callable can now throw a ClientErrorException exception
