@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.4 -- 2021-05-03
+
+    - Update dependencies to Ling.Light_Events (pushed by SubscribersUtil)
+
 - 2.2.3 -- 2021-05-03
 
     - Update dependencies to Ling.Light_Events (pushed by SubscribersUtil)
