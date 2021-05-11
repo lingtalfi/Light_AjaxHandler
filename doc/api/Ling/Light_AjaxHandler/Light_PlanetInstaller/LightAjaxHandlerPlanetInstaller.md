@@ -4,7 +4,7 @@
 
 The LightAjaxHandlerPlanetInstaller class
 ================
-2019-09-19 --> 2021-05-03
+2019-09-19 --> 2021-05-11
 
 
 
