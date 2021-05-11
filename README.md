@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.6 -- 2021-05-11
+
+    - Update deps (by CommitWizard).
+
 - 2.2.5 -- 2021-05-11
 
     - Update dependencies to Ling.Light_EasyRoute (pushed by SubscribersUtil)
