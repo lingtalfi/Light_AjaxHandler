@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-04-06
+2019-09-19 -> 2021-05-31
 
 
 
@@ -74,6 +74,10 @@ ajax_handler:
 History Log
 =============
 
+- 2.2.7 -- 2021-05-25
+
+    - Update api to work with Light_PlanetInstaller 2.0.0
+  
 - 2.2.6 -- 2021-05-11
 
     - Update deps (by CommitWizard).
