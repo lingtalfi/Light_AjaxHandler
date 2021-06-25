@@ -1,6 +1,6 @@
 Light_AjaxHandler
 ===========
-2019-09-19 -> 2021-06-03
+2019-09-19 -> 2021-06-25
 
 
 
@@ -73,6 +73,10 @@ ajax_handler:
 
 History Log
 =============
+
+- 2.2.10 -- 2021-06-25
+
+    - updated routes, add galaxy prefix 
 
 - 2.2.9 -- 2021-06-03
 
